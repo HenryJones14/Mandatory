@@ -1,0 +1,175 @@
+# Default include:
+[*.{cs,vb,c,h,cpp,hpp}]
+
+#   Define the '{name_style}' naming style
+# dotnet_naming_style.name_style.capitalization =                       # Required!
+# dotnet_naming_style.name_style.required_prefix =                      # Not required
+# dotnet_naming_style.name_style.required_suffix =                      # Not required
+# dotnet_naming_style.name_style.word_separator =                       # Not required
+
+#   Define the '{symbol_group}' symbol group
+# dotnet_naming_symbols.symbol_group.applicable_kinds =                 # Required!
+# dotnet_naming_symbols.symbol_group.applicable_accessibilities =       # Required!
+# dotnet_naming_symbols.symbol_group.required_modifiers =               # Not required
+
+#   Define the '{symbol_group_name_style}' rule
+# dotnet_naming_rule.symbol_group_name_style.symbols = symbol_group     # Required!
+# dotnet_naming_rule.symbol_group_name_style.style = name_style         # Required!
+# dotnet_naming_rule.symbol_group_name_style.severity = warning         # Required!
+
+
+
+
+
+# Generated include:
+#   Define the 'everything_public_internal_protected_protected_internal_local_const' symbol group
+dotnet_naming_symbols.everything_public_internal_protected_protected_internal_local_const.applicable_kinds = *
+dotnet_naming_symbols.everything_public_internal_protected_protected_internal_local_const.applicable_accessibilities = public, internal, protected, protected_internal, local
+dotnet_naming_symbols.everything_public_internal_protected_protected_internal_local_const.required_modifiers = const
+
+#   Define the 'everything_public_internal_protected_protected_internal_local_const_AllUpper' rule
+dotnet_naming_rule.everything_public_internal_protected_protected_internal_local_const_AllUpper.symbols = everything_public_internal_protected_protected_internal_local_const
+dotnet_naming_rule.everything_public_internal_protected_protected_internal_local_const_AllUpper.style = AllUpper
+dotnet_naming_rule.everything_public_internal_protected_protected_internal_local_const_AllUpper.severity = warning
+
+
+
+#   Define the 'everything_public_internal_protected_protected_internal_local_readonly' symbol group
+dotnet_naming_symbols.everything_public_internal_protected_protected_internal_local_readonly.applicable_kinds = *
+dotnet_naming_symbols.everything_public_internal_protected_protected_internal_local_readonly.applicable_accessibilities = public, internal, protected, protected_internal, local
+dotnet_naming_symbols.everything_public_internal_protected_protected_internal_local_readonly.required_modifiers = readonly
+
+#   Define the 'everything_public_internal_protected_protected_internal_local_readonly_AllUpper' rule
+dotnet_naming_rule.everything_public_internal_protected_protected_internal_local_readonly_AllUpper.symbols = everything_public_internal_protected_protected_internal_local_readonly
+dotnet_naming_rule.everything_public_internal_protected_protected_internal_local_readonly_AllUpper.style = AllUpper
+dotnet_naming_rule.everything_public_internal_protected_protected_internal_local_readonly_AllUpper.severity = warning
+
+
+
+#   Define the 'property_field_event_delegate_private_private_protected' symbol group
+dotnet_naming_symbols.property_field_event_delegate_private_private_protected.applicable_kinds = property, field, event, delegate
+dotnet_naming_symbols.property_field_event_delegate_private_private_protected.applicable_accessibilities = private, private_protected
+
+#   Define the 'property_field_event_delegate_private_private_protected_UnderscoreCamelCase' rule
+dotnet_naming_rule.property_field_event_delegate_private_private_protected_UnderscoreCamelCase.symbols = property_field_event_delegate_private_private_protected
+dotnet_naming_rule.property_field_event_delegate_private_private_protected_UnderscoreCamelCase.style = UnderscoreCamelCase
+dotnet_naming_rule.property_field_event_delegate_private_private_protected_UnderscoreCamelCase.severity = warning
+
+
+
+#   Define the 'class_struct_interface_enum_method_private_private_protected' symbol group
+dotnet_naming_symbols.class_struct_interface_enum_method_private_private_protected.applicable_kinds = class, struct, interface, enum, method
+dotnet_naming_symbols.class_struct_interface_enum_method_private_private_protected.applicable_accessibilities = private, private_protected
+
+#   Define the 'class_struct_interface_enum_method_private_private_protected_UnderscorePascalCase' rule
+dotnet_naming_rule.class_struct_interface_enum_method_private_private_protected_UnderscorePascalCase.symbols = class_struct_interface_enum_method_private_private_protected
+dotnet_naming_rule.class_struct_interface_enum_method_private_private_protected_UnderscorePascalCase.style = UnderscorePascalCase
+dotnet_naming_rule.class_struct_interface_enum_method_private_private_protected_UnderscorePascalCase.severity = warning
+
+
+
+#   Define the 'everything_local' symbol group
+dotnet_naming_symbols.everything_local.applicable_kinds = *
+dotnet_naming_symbols.everything_local.applicable_accessibilities = local
+
+#   Define the 'everything_local_AllLower' rule
+dotnet_naming_rule.everything_local_AllLower.symbols = everything_local
+dotnet_naming_rule.everything_local_AllLower.style = AllLower
+dotnet_naming_rule.everything_local_AllLower.severity = warning
+
+
+
+#   Define the 'parameter_type_parameter_everything' symbol group
+dotnet_naming_symbols.parameter_type_parameter_everything.applicable_kinds = parameter, type_parameter
+dotnet_naming_symbols.parameter_type_parameter_everything.applicable_accessibilities = *
+
+#   Define the 'parameter_type_parameter_everything_PascalCase' rule
+dotnet_naming_rule.parameter_type_parameter_everything_PascalCase.symbols = parameter_type_parameter_everything
+dotnet_naming_rule.parameter_type_parameter_everything_PascalCase.style = PascalCase
+dotnet_naming_rule.parameter_type_parameter_everything_PascalCase.severity = warning
+
+
+
+#   Define the 'everything_private_private_protected_const' symbol group
+dotnet_naming_symbols.everything_private_private_protected_const.applicable_kinds = *
+dotnet_naming_symbols.everything_private_private_protected_const.applicable_accessibilities = private, private_protected
+dotnet_naming_symbols.everything_private_private_protected_const.required_modifiers = const
+
+#   Define the 'everything_private_private_protected_const_UnderscoreAllUpper' rule
+dotnet_naming_rule.everything_private_private_protected_const_UnderscoreAllUpper.symbols = everything_private_private_protected_const
+dotnet_naming_rule.everything_private_private_protected_const_UnderscoreAllUpper.style = UnderscoreAllUpper
+dotnet_naming_rule.everything_private_private_protected_const_UnderscoreAllUpper.severity = warning
+
+
+
+#   Define the 'everything_private_private_protected_readonly' symbol group
+dotnet_naming_symbols.everything_private_private_protected_readonly.applicable_kinds = *
+dotnet_naming_symbols.everything_private_private_protected_readonly.applicable_accessibilities = private, private_protected
+dotnet_naming_symbols.everything_private_private_protected_readonly.required_modifiers = readonly
+
+#   Define the 'everything_private_private_protected_readonly_UnderscoreAllUpper' rule
+dotnet_naming_rule.everything_private_private_protected_readonly_UnderscoreAllUpper.symbols = everything_private_private_protected_readonly
+dotnet_naming_rule.everything_private_private_protected_readonly_UnderscoreAllUpper.style = UnderscoreAllUpper
+dotnet_naming_rule.everything_private_private_protected_readonly_UnderscoreAllUpper.severity = warning
+
+
+
+
+
+# Custom include:
+#   Define the 'CamelCase' naming style
+dotnet_naming_style.CamelCase.capitalization = camel_case
+#dotnet_naming_style.CamelCase.required_prefix =
+#dotnet_naming_style.CamelCase.required_suffix =
+#dotnet_naming_style.CamelCase.word_separator =
+
+#   Define the 'PascalCase' naming style
+dotnet_naming_style.PascalCase.capitalization = pascal_case
+#dotnet_naming_style.PascalCase.required_prefix =
+#dotnet_naming_style.PascalCase.required_suffix =
+#dotnet_naming_style.PascalCase.word_separator =
+
+#   Define the 'AllUpper' naming style
+dotnet_naming_style.AllUpper.capitalization = all_upper
+#dotnet_naming_style.AllUpper.required_prefix =
+#dotnet_naming_style.AllUpper.required_suffix =
+dotnet_naming_style.AllUpper.word_separator = _
+
+#   Define the 'AllLower' naming style
+dotnet_naming_style.AllLower.capitalization = all_lower
+#dotnet_naming_style.AllLower.required_prefix =
+#dotnet_naming_style.AllLower.required_suffix =
+#dotnet_naming_style.AllLower.word_separator =
+
+
+
+#   Define the 'UnderscoreCamelCase' naming style
+dotnet_naming_style.UnderscoreCamelCase.capitalization = camel_case
+dotnet_naming_style.UnderscoreCamelCase.required_prefix = _
+#dotnet_naming_style.UnderscoreCamelCase.required_suffix =
+#dotnet_naming_style.UnderscoreCamelCase.word_separator =
+
+#   Define the 'UnderscorePascalCase' naming style
+dotnet_naming_style.UnderscorePascalCase.capitalization = pascal_case
+dotnet_naming_style.UnderscorePascalCase.required_prefix = _
+#dotnet_naming_style.UnderscorePascalCase.required_suffix =
+#dotnet_naming_style.UnderscorePascalCase.word_separator =
+
+#   Define the 'UnderscoreAllUpper' naming style
+dotnet_naming_style.UnderscoreAllUpper.capitalization = all_upper
+dotnet_naming_style.UnderscoreAllUpper.required_prefix = _
+#dotnet_naming_style.UnderscoreAllUpper.required_suffix =
+dotnet_naming_style.UnderscoreAllUpper.word_separator = _
+
+#   Define the 'UnderscoreAllLower' naming style
+dotnet_naming_style.UnderscoreAllLower.capitalization = all_lower
+dotnet_naming_style.UnderscoreAllLower.required_prefix = _
+#dotnet_naming_style.UnderscoreAllLower.required_suffix =
+#dotnet_naming_style.UnderscoreAllLower.word_separator =
+
+
+
+
+
+# Json include:
+{"list":[{"applicable_kinds":-1,"applicable_accessibilities":91,"required_modifiers":4,"naming_style":2},{"applicable_kinds":-1,"applicable_accessibilities":91,"required_modifiers":8,"naming_style":2},{"applicable_kinds":928,"applicable_accessibilities":36,"required_modifiers":0,"naming_style":4},{"applicable_kinds":94,"applicable_accessibilities":36,"required_modifiers":0,"naming_style":5},{"applicable_kinds":-1,"applicable_accessibilities":64,"required_modifiers":0,"naming_style":3},{"applicable_kinds":3072,"applicable_accessibilities":-1,"required_modifiers":0,"naming_style":1},{"applicable_kinds":-1,"applicable_accessibilities":36,"required_modifiers":4,"naming_style":6},{"applicable_kinds":-1,"applicable_accessibilities":36,"required_modifiers":8,"naming_style":6}],"customInclude":"#   Define the 'CamelCase' naming style\ndotnet_naming_style.CamelCase.capitalization = camel_case\n#dotnet_naming_style.CamelCase.required_prefix =\n#dotnet_naming_style.CamelCase.required_suffix =\n#dotnet_naming_style.CamelCase.word_separator =\n\n#   Define the 'PascalCase' naming style\ndotnet_naming_style.PascalCase.capitalization = pascal_case\n#dotnet_naming_style.PascalCase.required_prefix =\n#dotnet_naming_style.PascalCase.required_suffix =\n#dotnet_naming_style.PascalCase.word_separator =\n\n#   Define the 'AllUpper' naming style\ndotnet_naming_style.AllUpper.capitalization = all_upper\n#dotnet_naming_style.AllUpper.required_prefix =\n#dotnet_naming_style.AllUpper.required_suffix =\ndotnet_naming_style.AllUpper.word_separator = _\n\n#   Define the 'AllLower' naming style\ndotnet_naming_style.AllLower.capitalization = all_lower\n#dotnet_naming_style.AllLower.required_prefix =\n#dotnet_naming_style.AllLower.required_suffix =\n#dotnet_naming_style.AllLower.word_separator =\n\n\n\n#   Define the 'UnderscoreCamelCase' naming style\ndotnet_naming_style.UnderscoreCamelCase.capitalization = camel_case\ndotnet_naming_style.UnderscoreCamelCase.required_prefix = _\n#dotnet_naming_style.UnderscoreCamelCase.required_suffix =\n#dotnet_naming_style.UnderscoreCamelCase.word_separator =\n\n#   Define the 'UnderscorePascalCase' naming style\ndotnet_naming_style.UnderscorePascalCase.capitalization = pascal_case\ndotnet_naming_style.UnderscorePascalCase.required_prefix = _\n#dotnet_naming_style.UnderscorePascalCase.required_suffix =\n#dotnet_naming_style.UnderscorePascalCase.word_separator =\n\n#   Define the 'UnderscoreAllUpper' naming style\ndotnet_naming_style.UnderscoreAllUpper.capitalization = all_upper\ndotnet_naming_style.UnderscoreAllUpper.required_prefix = _\n#dotnet_naming_style.UnderscoreAllUpper.required_suffix =\ndotnet_naming_style.UnderscoreAllUpper.word_separator = _\n\n#   Define the 'UnderscoreAllLower' naming style\ndotnet_naming_style.UnderscoreAllLower.capitalization = all_lower\ndotnet_naming_style.UnderscoreAllLower.required_prefix = _\n#dotnet_naming_style.UnderscoreAllLower.required_suffix =\n#dotnet_naming_style.UnderscoreAllLower.word_separator ="}
